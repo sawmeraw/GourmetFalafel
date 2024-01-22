@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@font-face {
+  font-family: "Hidayatullah";
+  src: url("assets/hidayatullah.ttf") format("truetype");
+}
+
+:root {
+  --header-padding: 1rem 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  max-height: 80px;
+  padding: var(--header-padding);
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+#navbar ul li .underline {
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: 0.6s ease-in-out;
+}
+
+#navbar ul li:hover .underline {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h2 {
+  font-weight: 500;
+}
+
+.logo-imgWrapper {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo-imgWrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#opening-image {
+  max-width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.opening-image__imageWrapper {
+  width: 100% !important;
+  height: 100% !important;
+  background: url(/assets/opening-sample.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#opening-image .opening-image__content {
+  width: 800px;
+  /* max-width: 800px; */
+  text-align: center;
+  position: relative;
+}
+
+#opening-image .opening-image__acmLogowrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#opening-image .opening-image__acmLogowrapper img {
+  width: 100%;
+}
+
+#opening-image .opening-image__content h1 {
+  margin-bottom: 2rem;
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#opening-image .opening-image__content h1,
+#opening-image .opening-image__content p {
+  color: #ffffff;
+}
+
+#opening-image .opening-image__content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateX(-150px);
+}
+
+#opening-image .opening-image__acmLogowrapper {
+  background-color: white;
+  clip-path: circle(50% at 50% 50%);
+  opacity: 1;
+}
+
+#opening-image .image-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#opening-image .image-button-container .image-button {
+  padding: 10px;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 72, 72);
+  transition: all 0.3s ease-in-out;
+}
+
+#opening-image .image-button-container .image-button:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid black;
+  transform: scale(1.1);
+}
+
+#opening-image .image-button-container .image-button:active {
+  transform: scale(0.9);
+}
+
+#opening {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#opening p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#opening ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#opening .opening-hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#opening .embedded-map {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#opening .embedded-map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#culinary {
+  margin-top: 5rem !important;
+  display: grid;
+  row-gap: 3rem;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+#culinary .culinary-items {
+  display: flex;
+  height: auto;
+  border-radius: 10px;
+}
+
+#culinary .culinary-items__imgWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#culinary .culinary-items__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem;
+  justify-content: center;
+}
+
+#culinary .culinary-items__content > h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  color: orange;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#culinary .culinary-items__content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#culinary .culinary-items__imgWrapper img {
+  width: 100%;
+
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.culinary-items h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.culinary-items p {
+  line-height: 1.4;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#parallax {
+  background-image: url("assets/parallax.jpg");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#parallax p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  color: rgb(255, 255, 255);
+}
+
+#explore-menu {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+#explore-menu h1 {
+  font-family: "Dancing Script", cursive;
+  color: orange;
+}
+
+#menu {
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 800px;
+  /* height: 1500px; */
+  background: #000;
+  color: white;
+  padding: 4rem 4rem;
+}
+
+.menu-breakfast > h2,
+.menu-lunch h2 {
+  font-family: "Hidayatullah";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-breakfast > h2 > span,
+.menu-lunch > h2 > span {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+.menu-breakfast-top__item,
+.menu-lunch-top__item,
+.menu-lunch-mid__item {
+  margin-bottom: 1rem;
+}
+
+.menu-breakfast-top__item > h3,
+.menu-breakfast-bottom__item > h3,
+.menu-lunch-top__item > h3,
+.menu-lunch-mid__item > h3,
+.menu-lunch-bottom__item > h3 {
+  font-family: "Hidayatullah", sans-serif;
+  font-size: 1.8rem;
+  color: orange;
+}
+
+#price {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu-breakfast-top__item > p,
+.menu-breakfast-bottom__item > p,
+.menu-lunch-top__item > p,
+.menu-lunch-mid__item > p,
+.menu-lunch-bottom__item > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.menu-breakfast-top__item .pancake {
+  font-size: 12px;
+}
+
+.menu-breakfast-top__extras,
+.menu-lunch-mid__extras {
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: 1rem;
+}
+
+.menu-breakfast-top__extras p,
+.menu-lunch-mid__extras p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.menu-breakfast-top__extras > h3,
+.menu-lunch-mid__extras > h3 {
+  grid-row: span 2;
+  color: orange;
+}
+
+.menu-breakfast-top,
+.menu-lunch-top,
+.menu-lunch-mid {
+  margin-bottom: 2.5rem;
+}
+
+.menu-breakfast-bottom,
+.menu-lunch-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  column-gap: 2rem;
+}
+
+.menu-lunch-mid {
+  position: relative;
+}
+
+.menu-breakfast-bottom__item:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-breakfast-bottom__item > h3 {
+  grid-column: span 2;
+}
+
+.menu-breakfast-bottom::before,
+.menu-lunch-mid::before,
+.menu-lunch-bottom::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: orange;
+}
+
+.menu-footer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: end;
+}
+
+#menu-next-page {
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-next-page:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+#menu-next-page:active {
+  transform: scale(0.95);
+}
+
+.menu-page {
+  display: none;
+}
+
+.menu-page.active {
+  display: block;
+}
