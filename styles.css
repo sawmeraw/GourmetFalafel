@@ -93,7 +93,7 @@ header nav {
 .opening-image__imageWrapper {
   width: 100% !important;
   height: 100% !important;
-  background: url(/assets/opening-sample.jpg) no-repeat center center/cover;
+  background: url(./assets/opening-sample.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
