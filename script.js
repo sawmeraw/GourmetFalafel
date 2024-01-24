@@ -25,12 +25,38 @@ function firstPageAnim() {
     ease: Expo,
   });
   tl.from(".culinary-items__imgWrapper", {
-    y: "50",
+    x: "50",
     opacity: 0,
-    duration: 0.8,
+    duration: 1.3,
+    ease: Expo.easeInOut,
+  });
+}
+
+function openingHoursAnim() {
+  let tl = gsap.timeline();
+  tl.from(".opening-content__hours", {
+    x: "-400",
+    opacity: 0,
+    duration: 1,
+    ease: Expo,
+    scrollTriger: {
+      trigger: ".opening-content__hours",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 1,
+    },
+  });
+
+  tl.from(".opening-hours__content-dishWrapper", {
+    x: "400",
+    opacity: 0,
+    duration: 0.9,
     ease: Expo,
   });
 }
+
+openingHoursAnim();
+
 firstPageAnim();
 
 function updateButtonText() {

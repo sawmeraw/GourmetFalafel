@@ -171,44 +171,158 @@ header nav {
 }
 
 #opening {
-  max-width: 800px;
+  max-width: 75vw;
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-#opening p {
+#opening h1 {
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: orange;
   margin-bottom: 2rem;
 }
 
-#opening ul li {
-  margin-bottom: 1rem;
+#opening h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#opening .opening-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-#opening .opening-hours {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 2rem;
+#opening .opening-content__hours {
+  padding: 1rem;
+  background: url(./assets/opening-bg.jpg);
+  color: white;
+  min-width: 300px;
 }
 
-#opening .embedded-map {
+.opening-content__hoursWrapper .title-box {
+  text-align: center;
+  color: orange;
+  position: relative;
+  top: 10px;
+  min-height: 42px;
+  background: url(./assets/title-bg.png) center top no-repeat;
+  margin-bottom: 14px;
+}
+
+.opening-content__hoursWrapper .title-box p {
+  position: relative;
+  top: 6px;
+}
+
+#opening .opening-content__hours .opening-content__hoursWrapper {
+  outline: 1px dotted grey;
+  padding: 0 1rem;
+}
+
+#opening .opening-content .opening-content__hoursWrapper ul li {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#opening .opening-content .opening-content__hoursWrapper ul li:last-child {
+  margin-bottom: 0;
+}
+
+#opening .opening-content .opening-content__hoursWrapper .contact {
+  margin-top: 30px;
+  padding: 8px;
+  text-align: center;
+}
+
+#opening .opening-content .opening-content__hoursWrapper .contact p {
+  font-family: "Dancing Script", cursive;
+  line-height: 18px;
+  font-size: 22px;
+  color: orange;
+}
+
+#opening .opening-content .opening-hours__content-dishWrapper {
+  padding: 0 0 0 4rem;
+  margin: auto 0;
+}
+
+#opening .opening-content .opening-hours__content-dishWrapper__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
   width: 100%;
-  height: 400px;
-  margin: 0 auto;
-  margin-top: 2rem;
 }
 
-#opening .embedded-map iframe {
+#opening .opening-content .opening-hours__content-dishWrapper__item:last-child {
+  margin-bottom: 0;
+}
+
+#opening
+  .opening-content
+  .opening-hours__content-dishWrapper__item
+  .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+#opening
+  .opening-content
+  .opening-hours__content-dishWrapper__item
+  .text-content.left {
+  margin-right: 0;
+}
+
+#opening .opening-content .text-content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+}
+
+#opening .opening-content .image-content {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+#opening .opening-content .image-content .overlay-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#opening .opening-content .image-content:hover .overlay-box {
+  opacity: 1;
+  background-color: rgba(254, 181, 24, 0.6);
+}
+
+#opening .opening-content .between-line {
+  width: 100%;
+  height: 2px;
+  border: 1px dashed grey;
+  margin-bottom: 20px;
 }
 
 #culinary {
@@ -302,12 +416,12 @@ header nav {
 #explore-menu {
   text-align: center;
   margin-top: 3rem;
-  font-size: 2rem;
 }
 
 #explore-menu h1 {
   font-family: "Dancing Script", cursive;
   color: orange;
+  font-size: 3.5rem;
 }
 
 #menu {
