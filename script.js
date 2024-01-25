@@ -126,7 +126,7 @@ function menuAnim() {
     ease: Expo,
     scrollTrigger: {
       trigger: "#menu",
-      start: "top center",
+      start: "top 80%",
       toggleActions: "restart none none none",
     },
   });
