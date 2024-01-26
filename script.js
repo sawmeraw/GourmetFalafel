@@ -1,6 +1,7 @@
 const nextButton = document.getElementById("menu-next-page");
 const menuPages = document.querySelectorAll(".menu-page");
 let currentPageIndex = 0;
+const galleryDiv = document.querySelectorAll(".gallery-item");
 
 gsap.registerPlugin(ScrollTrigger);
 
