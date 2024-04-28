@@ -1,2 +1,3 @@
 # GourmetFalafel
-Website for Gourmet Falafel
+
+Built with vanilla HTML, CSS, JS 
